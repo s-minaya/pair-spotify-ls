@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.header {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.logo-spotify {
+  width: 80px;
+  height: auto;
+  padding: 5px;
+  margin: 5px;
+}
+.menu-icon {
+  width: 30px;
+  height: auto;
+  padding: 1px;
+  margin: 1px;
+}
+.section-blue {
+  background-color: rgb(77, 169, 218);
+  color: white;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.titulo {
+  font-size: 50px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.p1 {
+  font-size: 25px;
+  line-height: 1.5;
+}
+.p2 {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.footer {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  flex-wrap: wrap;
+}
