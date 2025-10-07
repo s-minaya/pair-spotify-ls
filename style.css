@@ -1,66 +1,78 @@
+/* ===== RESETEO GENERAL ===== */
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
   font-family: "Inter", sans-serif;
 }
+
+/* ===== HEADER ===== */
 .header {
   background-color: black;
-  width: 100%;
+  width: 100%; /*Ocupa todo el ancho de la pantalla*/
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Logo a la izq, icono a la der */
   align-items: center;
-  padding: 5px;
+  padding: 5px 10px; /*Espacio interno arriba/abajo 5px y a los lados 10px*/
 }
+
 .logo-spotify {
   width: 80px;
   height: auto;
-  padding: 5px;
-  margin: 5px;
 }
-.menu-icon {
+
+.burger {
   width: 30px;
   height: auto;
-  padding: 1px;
-  margin: 1px;
 }
+
+/* ===== SECCIÓN AZUL ===== */
 .section-blue {
   background-color: rgb(77, 169, 218);
   color: white;
-  padding-top: 100px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding: 100px 20px 20px 20px;
 }
-.titulo {
+
+.title {
   font-size: 50px;
   text-align: left;
-  padding-bottom: 20px;
-}
-.p1 {
-  font-size: 25px;
-  line-height: 1.5;
-}
-.button {
-  background-color: rgb(13, 171, 89);
-  color: white;
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
-  padding: 15px;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.p1 {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.line-break {
+  display: block; /* hace que empiece en una nueva línea */
+}
+
+/* Botón */
 .ver-planes {
+  display: block; /*Lo hace un bloque, ocupa todo el ancho disponible*/
+  width: 100%; /*Ocupa todo el ancho del contenedor*/
+  margin: 0 auto 20px auto; /* Centrado con margen inferior*/
   background-color: rgb(13, 171, 89);
   color: white;
-  border-style: none;
+  border: none;
+  border-radius: 20px; /*Bordes redondeados*/
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
 }
+
+.ver-planes:hover {
+  background-color: rgb(9, 140, 70); /*Verde mas oscuro al pasar el raton */
+}
+
 .p2 {
   font-size: 15px;
   line-height: 1.5;
   margin-bottom: 15px;
 }
+
+/* ===== SECCIÓN BENEFICIOS ===== */
 .premium {
   font-size: 35px;
   text-align: center;
@@ -68,60 +80,81 @@
   margin-inline: 45px;
   line-height: 1.3;
 }
+
+/* Contenedor general de beneficios */
+.benefits-container {
+  display: flex;
+  flex-direction: column; /* Apila verticalmente */
+  align-items: flex-start; /*Los alinea al inicio*/
+  padding-left: 20px;
+}
+
+/* Cada bloque */
 .box {
-  position: relative;
+  display: flex; /*Pone imagen y texto en una misma linea */
+  align-items: center;
+  margin-bottom: 30px;
 }
-.box-4 {
-  margin-bottom: 75px;
+.box p span {
+  display: block; /* Hace que empiece en una nueva línea */
+  margin-top: 5px; /* Da un pequeño espacio entre la línea del título y la descripción */
 }
-.box p {
-  display: inline-block;
-  position: absolute;
-  top: 15px;
-  line-height: 2;
-}
+
 .benefit {
   height: 100px;
   width: auto;
-  padding-inline: 20px;
+  margin-right: 20px;
 }
+
+.box p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ===== FOOTER ===== */
 .section-black {
   background-color: black;
-  padding: 20px 0 20px 20px;
-  display: flex;
+  padding: 20px;
+  display: flex; /*Dos columnas (izqda y derecha)*/
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*Si no caben se apilan*/
   color: rgb(153, 150, 150);
   font-size: 14px;
 }
+
 .footer-left,
 .footer-right {
+  /*Cada lado del footer organizado en columnas con 10px de separacion*/
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .footer-top,
 .footer-bottom {
   display: flex;
   gap: 15px;
 }
+
 .footer-right {
-  display: flex;
-  flex-direction: column;
+  /*Para pegar todo a la derecha*/
   align-items: flex-end;
   text-align: right;
   margin-left: auto;
 }
+
 .flag {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
 }
+
 .flag img {
   width: 20px;
   height: auto;
 }
+
 a {
-  color: inherit;
+  color: inherit; /*Los enlaces heredan el color gris del texto*/
   text-decoration: none;
 }
